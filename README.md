@@ -1,4 +1,4 @@
-# Climsoft Dockerized Database
+# Dockerized Climsoft Database
 
 ## Introduction
 
