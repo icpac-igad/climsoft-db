@@ -23,11 +23,6 @@ cp .env.sample .env
 ```
 
 The .env file expects the following Environment Variables:
-MYSQL_ROOT_PASSWORD=root
-MYSQL_DATABASE=mariadb_climsoft_test_db_v4
-MYSQL_USER=root
-MYSQL_PASSWORD=root
-MYSQL_PORT=3309
 
 |   Variable      | Description |
 | ----------- | ----------- |
@@ -36,6 +31,7 @@ MYSQL_PORT=3309
 | MYSQL_ROOT_PASSWORD   |  Password for the root user above       |
 | MYSQL_PORT   |  External access port for the db       |
 | MYSQL_PASSWORD   |  Password for the DB_USER above      |
+| MARIADB_VERSION   |  MariaDB Server Version     |
 
 ### 3. Running the container
 
