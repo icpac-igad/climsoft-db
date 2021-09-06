@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  mariadb:
+    image: mariadb:${MARIADB_VERSION}
+    container_name: climsoft_mariadb
+    restart: ${RESTART_POLICY}
+    volumes: 
+      - /var/lib/mysql/data:${MARIADB_DATA_DIR}
+      - /var/lib/mysql/logs:${MARIADB_LOG_DIR}
+      - /var/docker/mariadb/conf:/etc/mysql
+      - ./initdb:/docker-entrypoint-initdb.d/
+    ports:
+      - ${MYSQL_PORT}:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
