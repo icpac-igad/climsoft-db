@@ -4,7 +4,7 @@
 
 [Climsoft](https://climsoft.org/) is a software suite for storing climatic data in a secure and flexible manner and for extracting useful information from the data. 
 
-This repository handles running a dockerized instance of the Climsoft MariaDB with test data. A docker compose configuration for running a MariDB  container that serves as the main database for storing Climsoft Data
+This repository handles running a dockerized instance of the Climsoft MariaDB with test data. A docker compose configuration for running a MariaDB  container that serves as the main database for storing Climsoft Data
 
 ## Installation
 
